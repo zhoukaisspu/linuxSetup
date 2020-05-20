@@ -3,7 +3,6 @@
 
 . ./common/common.sh
 
-printlog "Hello world"
 COLOR_SETTING="set -g default-terminal \"screen-256color\""
 CONFIG_FILE="${HOME}/.tmux.conf"
 
