@@ -19,6 +19,6 @@ checkExitCode $? "apt-update"
 printlog "apt-update sucessfully"
 
 printlog "Start to install Jenkins"
-sudo apt-get install jenkins
+sudo apt-get -y install jenkins
 checkExitCode $? "Install jenkins"
 printlog "Install jenkins sucefully"
