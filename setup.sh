@@ -4,6 +4,10 @@
 
 . ./common/common.sh
 
+printlog "+++++++++Start to update repo"
+sudo apt-get update 
+printlog "---------Repo update sucessfully"
+
 printlog "+++++++++Start to Invoke tmuxSetup.sh"
 bash  ./tmuxSetup.sh
 checkExitCode $? "tmuxSetup.sh"
@@ -20,3 +24,8 @@ printlog "+++++++++Start to invoke devToolSetup.sh"
 bash ./devToolSetup.sh
 checkExitCode $? "devToolSetup.sh"
 printlog "---------devToolSetup.sh sucessfully"
+
+printlog "+++++++++Start to invoke jenkinsSetup.sh"
+bash ./jenkinsSetup.sh
+checkExitCode $? "jenkinsSetup.sh"
+printlog "--------jenkinsSetup.sh sucessfully"
