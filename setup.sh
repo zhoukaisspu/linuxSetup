@@ -9,6 +9,12 @@ bash  ./tmuxSetup.sh
 checkExitCode $? "tmuxSetup.sh"
 printlog "tmuxSetup.sh sucefully"
 
+
+printlog "Start to invoke jreSetup.sh"
+bash ./jreSetup.sh
+checkExitCode $? "jreSetup.sh"
+printlog "jreSetup.sh sucessfully"
+
 #echo "Hello World"
 #echo "Start to install vim"
 #sudo apt-get -y install vim  
