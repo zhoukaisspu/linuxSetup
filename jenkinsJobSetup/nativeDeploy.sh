@@ -7,6 +7,8 @@
 source ../common/common.sh
 source ./globalVar.sh
 
+CURRENT_DIR=$(getScriptAbsolutePath)
+echo ${CURRENT_DIR}
 printlog "Start to remove cppscan repo from host"
 if [[ -d "${CPPSCAN_DIR}" ]]; then
 	rm -R "${CPPSCAN_DIR}"
@@ -18,3 +20,4 @@ printlog "Start to create ${CPPSCAN_DIR} folder"
 mkdir -p "${CPPSCAN_DIR}"
 checkExitCode $? "create ${CPPSCAN_DIR} folder"
 printlog "Create ${CPPSCAN_DIR} successfully"
+

@@ -11,3 +11,9 @@ checkExitCode() {
 		exit $1
 	fi
 }
+
+getScriptAbsolutePath() {
+	_PATH=$(dirname $0)
+	cd ${_PATH}
+	echo $(pwd)
+}
