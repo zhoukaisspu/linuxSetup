@@ -21,3 +21,10 @@ mkdir -p "${CPPSCAN_DIR}"
 checkExitCode $? "create ${CPPSCAN_DIR} folder"
 printlog "Create ${CPPSCAN_DIR} successfully"
 
+printlog "Start to init cppscan bare repo"
+cd "${CPPSCAN_DIR}"
+git init --bare
+checkExitCode $? "init cppscan bare repo"
+printlog "Init cppscan bare repo successfully"
+
+
