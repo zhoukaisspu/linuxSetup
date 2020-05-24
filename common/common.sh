@@ -14,6 +14,6 @@ checkExitCode() {
 
 getScriptAbsolutePath() {
 	_PATH=$(dirname $0)
-	cd ${_PATH}
+	cd "${_PATH}"
 	echo $(pwd)
 }
