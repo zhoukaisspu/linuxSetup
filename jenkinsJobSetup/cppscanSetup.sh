@@ -11,14 +11,14 @@ CURRENT_DIR=$(getScriptAbsolutePath)
 echo ${CURRENT_DIR}
 printlog "Start to remove cppscan repo from host"
 if [[ -d "${CPPSCAN_DIR}" ]]; then
-	rm -R "${CPPSCAN_DIR}"
+	rm -R -f  "${CPPSCAN_DIR}"
 fi
 checkExitCode $? "rm cppscan folder"
 printlog "Remove ${CPPSCAN_DIR} successfully"
 
 printlog "Start to remove cppscan source folder from host"
 if [[ -d "${CPPSCAN_SOURCE_DIR}" ]]; then
-	rm -R "${CPPSCAN_SOURCE_DIR}"
+	rm -R -f "${CPPSCAN_SOURCE_DIR}"
 fi
 checkExitCode $? "rm cppscan folder"
 printlog "Remove ${CPPSCAN_SOURCE_DIR} successfully"
@@ -47,7 +47,7 @@ checkExitCode $? "clone cppscan repo"
 printlog "clone cppscan repo successfully"
 
 printlog "Start to push cppscan to local bare repo"
-git remote add "${LOCAL_REPO_NAME}" "${CPPSCAN_SOURCE_DIR}"
+git remote add "${LOCAL_REPO_NAME}" "${CPPSCAN_DIR}"
 git push "${LOCAL_REPO_NAME}" master
 printlog "Push cppscan to local repo successfully"
 
