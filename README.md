@@ -10,7 +10,13 @@ Setup the linux environment automatically.
 $ bash ./setup.sh
 ```
 
-2. Invoke the `./jenkinsJobSetup/nativeDeploy.sh` to setup automation job.
+2. Invoke the `jenkinsSetup.sh` to install *jenkins*
+
+```sh
+$ bash ./jenkinsSetup.sh
+```
+
+3. Invoke the `./jenkinsJobSetup/nativeDeploy.sh` to setup automation job.
 
 ```sh
 $ bash ./jenkinsSetup/jenkinsSetup.sh
