@@ -24,7 +24,3 @@ bash ./jreSetup.sh
 checkExitCode $? "jreSetup.sh"
 printlog "---------jreSetup.sh sucessfully"
 
-printlog "+++++++++Start to invoke jenkinsSetup.sh"
-bash ./jenkinsSetup.sh
-checkExitCode $? "jenkinsSetup.sh"
-printlog "--------jenkinsSetup.sh sucessfully"
