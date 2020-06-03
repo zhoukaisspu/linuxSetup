@@ -17,3 +17,8 @@ printlog "Start to install tmux"
 sudo apt-get -y install tmux
 checkExitCode $? "Install tmux"
 printlog "tmux install sucessfully"
+
+printlog "Start to install curl"
+sudo apt-get -y install curl
+checkExitCode $? "Install curl"
+printlog "curl install successfully"
