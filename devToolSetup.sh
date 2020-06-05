@@ -22,3 +22,8 @@ printlog "Start to install curl"
 sudo apt-get -y install curl
 checkExitCode $? "Install curl"
 printlog "curl install successfully"
+
+printlog "Start to install python3"
+sudo apt-get -y install python3
+checkExitCode $? "Install python3"
+printlog "python3 install successfully"
