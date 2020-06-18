@@ -19,7 +19,7 @@ $ bash ./jenkinsSetup.sh
 3. Invoke the `./jenkinsJobSetup/nativeDeploy.sh` to setup automation job.
 
 ```sh
-$ bash ./jenkinsSetup/jenkinsSetup.sh
+$ bash ./jenkinsSetup/nativeDeploy.sh
 ```
 
 ### Install list
