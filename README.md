@@ -2,6 +2,18 @@
 
 Setup the linux environment automatically.
 
+## Prerequisite
+
+Setup the environment variable in the bash shell.
+
+```sh
+#set up github user name
+export githubUserName="zhoukaisspu"
+
+#set up access token for user
+export githubToken="Please input your token here"
+```
+
 ## Run
 
 1. Invoke the `setup.sh` to setup the environment.
