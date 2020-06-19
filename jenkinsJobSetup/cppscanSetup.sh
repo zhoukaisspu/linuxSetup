@@ -4,11 +4,14 @@
 # It can imporve the jenkins performance, since jenkins have to
 # clone the job and execute it.
 
+CURRENT_DIR=$(dirname $0)
+cd "${CURRENT_DIR}"
+
 source ../common/common.sh
 source ./globalVar.sh
 
-CURRENT_DIR=$(getScriptAbsolutePath)
 printlog "Current Dir:  ${CURRENT_DIR}"
+
 printlog "Start to remove cppscan repo from host"
 if [[ -d "${CPPSCAN_DIR}" ]]; then
 	rm -R -f  "${CPPSCAN_DIR}"
