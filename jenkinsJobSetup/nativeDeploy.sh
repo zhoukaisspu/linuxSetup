@@ -14,3 +14,8 @@ printlog "+++++Start to invoke cppscanSetup.sh"
 bash ./cppscanSetup.sh
 checkExitCode $? "run cppscanSetup.sh"
 printlog "-----Invoke cppscanSetup.sh successfully"
+
+printlog "+++++Start to invoke db.cppscanSetup.sh"
+bash ./dbcppscanSetup.sh
+checkExitCode $? "run dbcppscanSetup.sh"
+printlog "-----Invoke dbcppscanSetup.sh successfully"
