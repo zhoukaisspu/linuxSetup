@@ -4,7 +4,7 @@ Setup the linux environment automatically.
 
 ## Prerequisite
 
-Setup the environment variable in the bash shell.
+Setup the environment variable in the `.bashrc` file.
 
 ```sh
 #set up github user name
