@@ -34,14 +34,28 @@ $ bash ./jenkinsSetup.sh
 $ bash ./jenkinsJobSetup/nativeDeploy.sh
 ```
 
+### Dependency list
+
+| script name       |    dependency list       |
+|-------------------|--------------------------|
+| `setup.sh`        | `devToolSetup.sh`        |
+| `-->`             | `tmuxSetup.sh`            |
+| `-->`             | `jreSetup.sh`             |
+|===================|===========================|
+| `jenkinsSetup.sh` | `It will install jenkins`   |
+|===================|===========================|
+| `nativeDeploy.sh` | `Deploy the automation job to /var/tmp/myJenkinsJob` |
+
+
+
 ### Install list
 
-| script name   |    responsibility   |
-|---------------|---------------------|
-| `tmuxSetup.sh` | Add color configuration for tmux |
-| `jreSetup.sh` | Install openjdk-8-jdk and openjdk-8-jre  |
+| script name         |    responsibility   |
+|---------------------|---------------------|
+| `tmuxSetup.sh`      | Add color configuration for tmux |
+| `jreSetup.sh`       | Install openjdk-8-jdk and openjdk-8-jre  |
 | `devToolsSetup.sh`  | Install git, vim, tmux|
-| `jenkinsSetup.sh`  | Add key add jenkins.list for apt, also intall jenkins | 
+| `jenkinsSetup.sh`   | Add key add jenkins.list for apt, also intall jenkins | 
 
 ### Job list
 
