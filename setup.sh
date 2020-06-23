@@ -18,7 +18,6 @@ bash  ./tmuxSetup.sh
 checkExitCode $? "tmuxSetup.sh"
 printlog "---------tmuxSetup.sh sucefully"
 
-
 printlog "+++++++++Start to invoke jreSetup.sh"
 bash ./jreSetup.sh
 checkExitCode $? "jreSetup.sh"
