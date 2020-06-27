@@ -19,3 +19,8 @@ printlog "+++++Start to invoke db.cppscanSetup.sh"
 bash ./dbcppscanSetup.sh
 checkExitCode $? "run dbcppscanSetup.sh"
 printlog "-----Invoke dbcppscanSetup.sh successfully"
+
+printlog "+++++Start to invoke kws.sh"
+bash ./kws.sh
+checkExitCode $? "run kws.sh"
+printlog "-----Invoke kws.sh successfully"
