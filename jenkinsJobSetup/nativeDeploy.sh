@@ -24,7 +24,7 @@ printlog "-----Setup cppscan successfully"
 
 printlog "+++++Start to setup db.cppscanSetup"
 #bash ./dbcppscanSetup.sh
-bash ./jobSetup "${DB_CPPSCAN_REMOTE_REPO}" "${DB_CPPSCAN_DIR}" "${DB_CPPSCAN_SOURCE_DIR}"
+bash ./jobSetup.sh "${DB_CPPSCAN_REMOTE_REPO}" "${DB_CPPSCAN_DIR}" "${DB_CPPSCAN_SOURCE_DIR}"
 checkExitCode $? "setup db.cppscan"
 printlog "-----Setup db.cppscan successfully"
 
