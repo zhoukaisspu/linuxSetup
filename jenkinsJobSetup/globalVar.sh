@@ -15,3 +15,7 @@ export DB_CPPSCAN_SOURCE_DIR="${DEPLOY_DIR_BASE}/db.cppscan"
 export KWS_REPO="https://${githubUserName}:${githubToken}@github.com/xwJohn/KWS.git"
 export KWS_DIR="${DEPLOY_DIR_BASE}/KWS.git"
 export KWS_SOURCE_DIR="${DEPLOY_DIR_BASE}/KWS"
+
+export AUDIOMENTATIONS_REPO="https://${githubUserName}:${githubToken}@github.com/xwJohn/audiomentations.git"
+export AUDIOMENTATIONS_DIR="${DEPLOY_DIR_BASE}/audiomentations.git"
+export AUDIOMENTATIONS_SOURCE_DIR="${DEPLOY_DIR_BASE}/audiomentations"
