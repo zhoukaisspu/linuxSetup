@@ -23,11 +23,13 @@ checkExitCode $? "run cppscanSetup.sh"
 printlog "-----Invoke cppscanSetup.sh successfully"
 
 printlog "+++++Start to invoke db.cppscanSetup.sh"
-bash ./dbcppscanSetup.sh
+#bash ./dbcppscanSetup.sh
+bash ./jobSetup "${DB_CPPSCAN_REMOTE_REPO}" "${DB_CPPSCAN_DIR}" "${DB_CPPSCAN_SOURCE_DIR}"
 checkExitCode $? "run dbcppscanSetup.sh"
 printlog "-----Invoke dbcppscanSetup.sh successfully"
 
 printlog "+++++Start to invoke kws.sh"
-bash ./kws.sh
+#bash ./kws.sh
+bash ./jobSetup.sh "${KWS_REPO}" "${KWS_DIR}" "${KWS_SOURCE_DIR}"
 checkExitCode $? "run kws.sh"
 printlog "-----Invoke kws.sh successfully"
